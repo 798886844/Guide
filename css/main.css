@@ -897,7 +897,7 @@
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1605896001146&di=357fee74d23783c1400bdcac0dc5eddb&imgtype=0&src=http%3A%2F%2Fd.hiphotos.baidu.com%2Fbaike%2Fc0%253Dbaike60%252C5%252C5%252C60%252C20%253Bt%253Dgif%2Fsign%3D9b2f10e0a918972bb737089887a410ec%2Ffaf2b2119313b07e81b97cfc0ed7912397dd8c39.jpg");
+			background-image: url("../images/bg.png");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
