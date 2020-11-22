@@ -1,54 +1,208 @@
-﻿<!DOCTYPE HTML>
+﻿<!doctype html>
 <html>
 <head>
-	<title>FXXK UESTC Access Control</title>
 <meta charset="utf-8">
-<meta name="baidu-site-verification" content="b9lOcChmbf">
-<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-<link rel="shortcut icon" href="https://chyon.cn//images/avatar.png" />
-<link rel="stylesheet" href="css/main.css">
-<noscript>
-<link rel="stylesheet" href="css/noscript.css"/>
-</noscript>
+<title>FXXK UESTC Access Control</title>
+<script src="https://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<style>
+/*开始导航页样式表*/
+html,body {
+	height:100%;
+}
+body {
+	margin:0;
+	overflow:hidden;
+	background:url(../images/bg.png) no-repeat center;
+	background-size:cover;
+}
+/*内容居中*/
+    body h1 {
+	text-align:center;
+}
+/*盒子样式*/
+.selector {
+	position:absolute;
+	left:50%;
+	top:50%;
+	width:140px;
+	height:140px;
+	margin-top:-70px;
+	margin-left:-70px;
+}
+/*按钮*/
+    .selector,.selector button {
+	font-family:'Oswald',sans-serif;
+	font-weight:300;
+}
+.selector button {
+	position:relative;
+	width:100%;
+	height:100%;
+	padding:10px;
+	background:#428bca;
+	border-radius:50%;
+	border:0;
+	color:white;
+	font-size:20px;
+	cursor:pointer;
+	box-shadow:0 3px 3px rgba(0,0,0,0.1);
+	transition:all .1s;
+}
+.selector button:hover {
+	background:#3071a9;
+}
+.selector button:focus {
+	outline:none;
+}
+/*按钮结束*/
+        /*菜单*/
+        .selector ul {
+	position:absolute;
+	list-style:none;
+	padding:0;
+	margin:0;
+	top:-20px;
+	right:-20px;
+	bottom:-20px;
+	left:-20px;
+}
+.selector li {
+	position:absolute;
+	width:0;
+	height:100%;
+	margin:0 50%;
+	-webkit-transform:rotate(-360deg);
+	transition:all 0.8s ease-in-out;
+}
+.selector li input {
+	display:none;
+}
+.selector li input + label {
+	position:absolute;
+	left:50%;
+	bottom:100%;
+	width:0;
+	height:0;
+	line-height:1px;
+	margin-left:0;
+	background:#fff;
+	border-radius:50%;
+	text-align:center;
+	font-size:1px;
+	overflow:hidden;
+	cursor:pointer;
+	box-shadow:none;
+	transition:all 0.8s ease-in-out,color 0.1s,background 0.1s;
+}
+.selector li input + label:hover {
+	background:#f0f0f0;
+}
+.selector li input:checked + label {
+	background:#5cb85c;
+	color:white;
+}
+.selector li input:checked + label:hover {
+	background:#449d44;
+}
+.selector.open li input + label {
+	width:80px;
+	height:80px;
+	line-height:80px;
+	margin-left:-40px;
+	box-shadow:0 3px 3px rgba(0,0,0,0.1);
+	font-size:14px;
+}
+.selector.open li input + label a {
+	text-decoration:none;
+	color:#000;
+}
+/*菜单结束*/
+</style>
 </head>
 <body>
-<div id="wrapper">
-	<header id="header">
-	<div class="logo">
-		<img src="https://chyon.cn//images/avatar.png
+<h1>去特么的门禁</h1>
+<div class="selector">
+    <ul>
+        <li>
+            <input id="c1" type="checkbox">
+            <label for="c1"><a href="http://eportal.uestc.edu.cn/jkdkapp/sys/lwReportEpidemicStu/*default/index.do">体温上报</a></label>
+        </li>
+        <li>
+            <input id="c2" type="checkbox">
+            <label for="c2"><a href="https://w.url.cn/s/A6MSJUR">门禁登记</a></label>
+        </li>
+        <!--<li>
+            <input id="c3" type="checkbox">
+            <label for="c3"><a href="###">菜单3</a></label>
+        </li>
+        <li>
+            <input id="c4" type="checkbox">
+            <label for="c4"><a href="###">菜单4</a></label>
+        </li>
+        <li>
+            <input id="c5" type="checkbox">
+            <label for="c5"><a href="###">菜单5</a></label>
+        </li>
+        <li>
+            <input id="c6" type="checkbox">
+            <label for="c6"><a href="###">菜单6</a></label>
+        </li>
+        <li>
+            <input id="c7" type="checkbox">
+            <label for="c7"><a href="###">菜单7</a></label>
+        </li>
+        <li>
+            <input id="c8" type="checkbox">
+            <label for="c8"><a href="###">菜单8</a></label>
+        </li>-->
+    </ul>
+    <button></button>
+</div>
 
-" class="logo">
-	</div>
-	<div class="content">
-		<div class="inner">
-			<h1>FXXK UESTC Access Control </h1>
-			</p>
-		</div>
-	</div>
-	<nav>
-		<script type="text/javascript">
-			function duihua()
-			{
-			alert("言岚")
-			}
-		</script>
-	<ul>
-		<li><a href="http://eportal.uestc.edu.cn/jkdkapp/sys/lwReportEpidemicStu/*default/index.do" target="_blank">体温上报</a></li><!-- 按钮1-->
-		<li><a href="https://w.url.cn/s/A6MSJUR" target="_blank">进出门禁</a></li><!-- 按钮2-->
-		<li><a href="https://www.baidu.com" target="_blank">留空备用</a></li><!-- 按钮3-->
-		<li><a href="http://www.baidu.com" target="_blank">留空备用</a></li><!-- 按钮5-->
-	</ul>
-	</nav></header>
-	<footer id="footer">
-	<p class="copyright">© 2018-2019.</p><!-- 版权-->
-	</footer>
-</div>
-<div id="bg">
-</div>
-<script src="js/jquery.min.js"></script>
-<script src="js/skel.min.js"></script>
-<script src="js/util.js"></script>
-<script src="js/main.js"></script>
-<script type="text/javascript">document.oncontextmenu=function(t){window.event&&(t=window.event);try{var e=t.srcElement;return"INPUT"==e.tagName&&"text"==e.type.toLowerCase()||"TEXTAREA"==e.tagName?!0:!1}catch(n){return!1}},document.onpaste=function(t){window.event&&(t=window.event);try{var e=t.srcElement;return"INPUT"==e.tagName&&"text"==e.type.toLowerCase()||"TEXTAREA"==e.tagName?!0:!1}catch(n){return!1}},document.oncopy=function(t){window.event&&(t=window.event);try{var e=t.srcElement;return"INPUT"==e.tagName&&"text"==e.type.toLowerCase()||"TEXTAREA"==e.tagName?!0:!1}catch(n){return!1}},document.oncut=function(t){window.event&&(t=window.event);try{var e=t.srcElement;return"INPUT"==e.tagName&&"text"==e.type.toLowerCase()||"TEXTAREA"==e.tagName?!0:!1}catch(n){return!1}},document.onselectstart=function(t){window.event&&(t=window.event);try{var e=t.srcElement;return"INPUT"==e.tagName&&"text"==e.type.toLowerCase()||"TEXTAREA"==e.tagName?!0:!1}catch(n){return!1}};</script>
+<script>
+var nbOptions = 8;
+var angleStart = -360;
+
+// jquery rotate animation
+function rotate(li, d) {
+    $({
+        d: angleStart
+    }).animate({
+        d: d
+    }, {
+        step: function(now) {
+            $(li)
+                .css({
+                    transform: 'rotate(' + now + 'deg)'
+                })
+                .find('label')
+                .css({
+                    transform: 'rotate(' + (-now) + 'deg)'
+                });
+        },
+        duration: 0
+    });
+}
+
+// show / hide the options
+function toggleOptions(s) {
+    $(s).toggleClass('open');
+    var li = $(s).find('li');
+    var deg = $(s).hasClass('half') ? 180 / (li.length - 1) : 360 / li.length;
+    for (var i = 0; i < li.length; i++) {
+        var d = $(s).hasClass('half') ? (i * deg) - 90 : i * deg;
+        $(s).hasClass('open') ? rotate(li[i], d) : rotate(li[i], angleStart);
+    }
+}
+
+$('.selector button').click(function(e) {
+    toggleOptions($(this).parent());
+});
+
+setTimeout(function() {
+    toggleOptions('.selector');
+}, 100); //@ sourceURL=pen.js
+</script>
+
 </body>
 </html>
